@@ -415,7 +415,7 @@ let travelMethodCounts = {};
 
 // Complete the exercise in the space below:
 travelMethodCounts = travelMethods.reduce((tally, travelType) => {
-  if(tally.travelType) {
+  if(tally[travelType]) {
     tally[travelType] = tally[travelType] + 1;
   } else tally[travelType] = 1;
 
